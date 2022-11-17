@@ -1,5 +1,5 @@
 rawdata := $(wildcard data/*.txt)
-parseddata := $(patsubst data/%.txt,data-udparsed/%.conllu,$(rawdata))
+parseddata := $(patsubst data/%.txt,data-parsed/%.conllu,$(rawdata))
 
 all : $(parseddata)
 
